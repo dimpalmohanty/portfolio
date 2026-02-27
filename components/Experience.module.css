@@ -1,0 +1,122 @@
+.section {
+  padding: 140px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.heading {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+/* Timeline Line */
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #6366f1, #ec4899);
+  transform: translateX(-50%);
+}
+
+/* Experience Item */
+.item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.left {
+  left: 0;
+  text-align: right;
+}
+
+.right {
+  left: 50%;
+}
+
+/* Card */
+.card {
+  background: rgba(20, 20, 27, 0.9);
+  border: 1px solid #23232d;
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border: 1px solid #6366f1;
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.company {
+  color: #8b5cf6;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.bullets {
+  padding-left: 18px;
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+/* Timeline Node */
+.node {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background: #6366f1;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 20px rgba(99,102,241,0.7);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .item {
+    width: 100%;
+    padding-left: 60px;
+    text-align: left;
+  }
+
+  .left, .right {
+    left: 0;
+  }
+
+  .node {
+    left: 20px;
+  }
+}

@@ -1,0 +1,56 @@
+.section {
+  padding: 120px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+
+.heading {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.content {
+  color: #a1a1aa;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+}
+
+.highlight {
+  color: #6366f1;
+  font-weight: 600;
+}
+.signature {
+  margin-top: 40px;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #22d3ee;
+  opacity: 0.9;
+  border-left: 3px solid rgba(34, 211, 238, 0.4);
+  padding-left: 16px;
+}
+
+/* Desktop Layout */
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1.5fr;
+    align-items: start;
+  }
+}
+

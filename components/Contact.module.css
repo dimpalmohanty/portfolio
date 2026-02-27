@@ -1,0 +1,59 @@
+.section {
+  padding: 140px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.subtext {
+  color: #a1a1aa;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.emailButton {
+  display: inline-block;
+  background: #6366f1;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.emailButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.3);
+}
+
+.linkRow {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.linkItem {
+  color: #8c8c97;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.linkItem:hover {
+  color: #6366f1;
+}
