@@ -4,6 +4,7 @@ import "./globals.css";
 
 import SystemBackground from "@/components/SystemBackground";
 import Navbar from "@/components/navbar";
+import AIChat from "@/components/AIChat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
         
         <SystemBackground/>
         <Navbar />
+        <AIChat />
         {children}
       </body>
     </html>
