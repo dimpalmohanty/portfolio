@@ -170,3 +170,61 @@
   scrollbar-width: thin;
   scrollbar-color: #6366f1 transparent;
 }
+
+
+/* ========================= */
+/* RESPONSIVE IMPROVEMENTS */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .chatBox {
+    width: 90vw;
+    right: 5vw;
+    height: 70vh;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  .fab {
+    bottom: 20px;
+    right: 20px;
+    width: 58px;
+    height: 58px;
+  }
+
+  .chatBox {
+    width: 100vw;
+    height: 85vh;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    animation: slideUp 0.25s ease forwards;
+  }
+
+  .messages {
+    padding: 14px;
+  }
+
+  .userBubble,
+  .aiBubble {
+    font-size: 0.82rem;
+    max-width: 90%;
+  }
+
+  .inputRow input {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile Slide Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
