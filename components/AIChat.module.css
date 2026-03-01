@@ -186,38 +186,41 @@
 }
 
 /* Mobile */
+/* ========================= */
+/* MOBILE RESPONSIVE FIX */
+/* ========================= */
+
 @media (max-width: 480px) {
 
   .fab {
     bottom: 20px;
     right: 20px;
-    width: 58px;
-    height: 58px;
   }
 
   .chatBox {
     width: 100vw;
-    height: 85vh;
+    height: 85dvh; /* dynamic viewport height */
     right: 0;
     bottom: 0;
     border-radius: 20px 20px 0 0;
-    animation: slideUp 0.25s ease forwards;
+    animation: slideUp 0.3s ease forwards;
   }
 
   .messages {
     padding: 14px;
   }
 
-  .userBubble,
-  .aiBubble {
-    font-size: 0.82rem;
-    max-width: 90%;
+  .inputRow {
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
-  .inputRow input {
+  .userBubble,
+  .aiBubble {
+    max-width: 88%;
     font-size: 0.85rem;
   }
 }
+  
 
 /* Mobile Slide Animation */
 @keyframes slideUp {
