@@ -82,7 +82,7 @@ export default function Hero() {
               View Projects
             </a>
 
-            <a href="/DimpalMohantyResume16feb2026.pdf" className={styles.secondaryBtn} download>
+            <a href="/DimpalMohantyResumeMarch.pdf" className={styles.secondaryBtn} download>
               Download Resume
             </a>
           </motion.div>
